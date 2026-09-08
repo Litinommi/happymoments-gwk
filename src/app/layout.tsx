@@ -18,7 +18,7 @@ const outfit = Outfit({
 const siteUrl = "https://litinommi.github.io/happymoments-gwk";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(`${siteUrl}/`),
   title: "Happy Moments GWK | Party Hall & Celebration Venue",
   description:
     "Celebrate birthdays, anniversaries, get-togethers and special occasions at Happy Moments GWK. Explore celebration packages, decorations and enquire on WhatsApp.",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
       "Celebrate birthdays, anniversaries, get-togethers and special occasions at Happy Moments GWK. Explore celebration packages, decorations and enquire on WhatsApp.",
     url: siteUrl,
     siteName: "Happy Moments GWK",
-    images: ["/logo.jpg"],
+    images: ["logo.jpg"],
     locale: "en_IN",
     type: "website",
   },
@@ -44,10 +44,7 @@ export const metadata: Metadata = {
     title: "Happy Moments GWK | Party Hall & Celebration Venue",
     description:
       "Celebrate birthdays, anniversaries, get-togethers and special occasions at Happy Moments GWK.",
-    images: ["/logo.jpg"],
-  },
-  icons: {
-    icon: "/logo.jpg",
+    images: ["logo.jpg"],
   },
 };
 
