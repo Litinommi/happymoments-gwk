@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Camera, Phone, MapPin } from "lucide-react";
-import { BUSINESS, NAV_LINKS } from "@/lib/constants";
+import { BUSINESS, NAV_LINKS, LOGO_SRC } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="max-w-xs">
           <div className="flex items-center gap-2.5">
             <div className="relative h-9 w-9 overflow-hidden rounded-full ring-1 ring-white/20">
-              <Image src="/logo.jpg" alt="Happy Moments GWK logo" fill sizes="36px" className="object-cover" />
+              <Image src={LOGO_SRC} alt="Happy Moments GWK logo" fill sizes="36px" className="object-cover" />
             </div>
             <span className="font-display text-sm font-semibold uppercase tracking-wide">
               Happy Moments <span className="text-cyan">GWK</span>

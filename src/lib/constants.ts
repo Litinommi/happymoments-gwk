@@ -1,3 +1,7 @@
+// Base path is only set when deployed to GitHub Pages (see next.config.ts);
+// next/image doesn't auto-prefix it onto `src` when images are unoptimized.
+export const LOGO_SRC = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/logo.jpg`;
+
 export const BUSINESS = {
   name: "Happy Moments GWK",
   tagline: "Party Hall & Celebration Venue",

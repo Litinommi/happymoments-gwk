@@ -6,7 +6,7 @@ import { MapPin, ChevronDown } from "lucide-react";
 import DiscoLights from "./DiscoLights";
 import ParticleField from "./ParticleField";
 import MagneticButton from "./MagneticButton";
-import { buildWhatsAppLink, DEFAULT_ENQUIRY_MESSAGE } from "@/lib/constants";
+import { buildWhatsAppLink, DEFAULT_ENQUIRY_MESSAGE, LOGO_SRC } from "@/lib/constants";
 
 const HEADING_LINE_1 = "MAKE EVERY MOMENT";
 const HEADING_LINE_2 = "A HAPPY MOMENT";
@@ -71,7 +71,7 @@ export default function Hero() {
         >
           <div className="absolute inset-0 -z-10 scale-150 rounded-full bg-magenta/20 blur-2xl" />
           <div className="relative h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded-full ring-2 ring-white/15">
-            <Image src="/logo.jpg" alt="Happy Moments GWK" fill sizes="96px" className="object-cover" priority />
+            <Image src={LOGO_SRC} alt="Happy Moments GWK" fill sizes="96px" className="object-cover" priority />
           </div>
         </motion.div>
 

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, MessageCircle } from "lucide-react";
 import clsx from "clsx";
-import { NAV_LINKS, DEFAULT_ENQUIRY_MESSAGE, buildWhatsAppLink } from "@/lib/constants";
+import { NAV_LINKS, DEFAULT_ENQUIRY_MESSAGE, buildWhatsAppLink, LOGO_SRC } from "@/lib/constants";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -38,7 +38,7 @@ export default function Navbar() {
         <nav className="mx-auto max-w-7xl px-5 sm:px-8 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2.5">
             <div className="relative w-10 h-10 rounded-full overflow-hidden ring-1 ring-white/20">
-              <Image src="/logo.jpg" alt="Happy Moments GWK logo" fill sizes="40px" className="object-cover" />
+              <Image src={LOGO_SRC} alt="Happy Moments GWK logo" fill sizes="40px" className="object-cover" />
             </div>
             <span className="font-display font-semibold tracking-wide text-sm sm:text-base uppercase">
               Happy Moments <span className="text-cyan">GWK</span>
